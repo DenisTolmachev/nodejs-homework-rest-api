@@ -4,7 +4,7 @@ const ctrl = require("../../controllers/contacts");
 
 const { validateBody } = require("../../middlewares");
 
-const schemas = require("../../schemas/contactSchema");
+const { schemas } = require("../../models/contact");
 
 const { ctrlWrapper } = require("../../helpers");
 
