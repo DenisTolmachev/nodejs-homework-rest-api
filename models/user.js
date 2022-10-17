@@ -27,7 +27,10 @@ const userSchema = new Schema(
 			default: null,
 		},
 	},
-	{ versionKey: false, timestamps: true }
+	{
+		versionKey: false,
+		timestamps: true
+	}
 );
 
 userSchema.post("save", handleSaveErrors);
